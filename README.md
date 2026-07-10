@@ -1,5 +1,5 @@
 ## About
-A custom chip that monitors a water-quality sensor and generates an alert when the measured conductivity moves outside a desired range. Purpose is to provide a simple, low-power interface between a conductivity sensor and a digital monitoring system.
+IC monitoring a water-quality sensor and generates an alert when the measured conductivity moves outside a desired range. Purpose is to provide a simple, low-power interface between a conductivity sensor and a digital monitoring system.
 
 ## Architecture 
 
