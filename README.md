@@ -1,5 +1,5 @@
 ## About
-Enable autonomous, low-power environmental monitoring nodes that detect contamination, salinity changes, or abnormal conductivity without requiring continuous ADC sampling or cloud processing.
+A custom chip that monitors a water-quality sensor and generates an alert when the measured conductivity moves outside a desired range. Purpose is to provide a simple, low-power interface between a conductivity sensor and a digital monitoring system.
 
 ## Architecture 
 
