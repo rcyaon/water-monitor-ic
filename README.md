@@ -17,13 +17,12 @@ water_quality_monitor_ic/
 │   ├── reference/
 │   │   ├── bandgap_reference.sch
 │   │   └── bias_generator.sch
-│   ├── analog/
-│   │   ├── current_source.sch
-│   │   ├── sensor_buffer.sch
-│   │   ├── programmable_gain_amp.sch
-│   │   ├── comparator_low.sch
-│   │   └── comparator_high.sch
-│   └── digital/
+│   └── blocks/
+│       ├── current_source.sch
+│       ├── sensor_buffer.sch
+│       ├── programmable_gain_amp.sch
+│       ├── comparator_low.sch
+│       └── comparator_high.sch
 │       ├── sr_latch.sch
 │       ├── alert_logic.sch
 │       └── output_driver.sch
@@ -33,14 +32,3 @@ water_quality_monitor_ic/
     └── temperature_variation.spice
 ```
 
-### Blocks to design
-* Bandgap / Voltage Reference
-* Bias Generator
-* Precision Current Source
-* Sensor Buffer
-* Programmable Gain Amplifier (PGA)
-* Low Threshold Comparator
-* High Threshold Comparator
-* Window Detector Logic
-* SR Latch
-* Output Driver
