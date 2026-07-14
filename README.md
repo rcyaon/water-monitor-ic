@@ -26,9 +26,10 @@ water_quality_monitor_ic/
 │       ├── sr_latch.sch
 │       ├── alert_logic.sch
 │       └── output_driver.sch
-└── sensor_models/
-    ├── conductivity_probe.spice
-    ├── contamination_cases.spice
-    └── temperature_variation.spice
+└── verilog/
+    ├── t_gate_driver.v
+    ├── window_detector.v
+    ├── decoder.v
+    └── monitor_misc.v
 ```
 
