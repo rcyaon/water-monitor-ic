@@ -1,10 +1,8 @@
 # Preparing Verilog files for mixed signal simulation
-For sake of clarity, I'll be running this with `decoder.v` as an example. Applies the same to other Verilog files, but note that they should have a similar logic to `decoder.v`.
+All commands assume you're working inside the IIC-OSIC-TOOLS container (noVNC desktop). For sake of clarity, I'll be running this with `decoder.v` as an example. 
 
 > [!NOTE]
-> Running `vlog2Verilog` directly on a file that contains `include "monitor_misc.v"` (or any macro-only include) can segfault the tool outright, rather than erroring cleanly. 
-
-All commands assume you're working inside the IIC-OSIC-TOOLS container (noVNC desktop).
+> Running `vlog2Verilog` directly on a file with `include "monitor_misc.v"` (or any macro-only include) can segfault the tool outright rather than erroring cleanly.
 
 0. Install the `/scripts` folder in this repository (contains `synth.sh` and `spi2xspice.py`).
 
@@ -34,7 +32,7 @@ vlog2Verilog netlist/nl/decoder.nl.v > xspice/decoder.vp
 cd xspice
 vlog2Spice decoder.vp > decoder.spice
 ```
-> [!WARNING]
+> [!NOTE]
 > `vlog2Verilog` only understands structural Verilog, not assign/behavioral statements. On raw RTL it won't error, it'll silently emit an empty black-box stub. This is why synthesis (step 2) is not optional.
 
 You'll likely see warnings like:
